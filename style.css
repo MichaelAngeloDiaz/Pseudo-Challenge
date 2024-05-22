@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com.css2?family=Poppins:wght300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(purple.jfif);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.box {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.box h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    transition: border 0.3s, color 0.3s;    
+}
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box input:focus {
+    border: 2px solid blue;
+}
+
+.input-box input:focus::placeholder {
+    color: transparent;
+}
+
+.input-box input:focus, input:valid {
+    color: white;
+}
+
+.input-box input:focus::before {
+    content: '👉';
+    margin-right: 5px;
+    display: none;
+}
+
+.box button {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.box button:hover {
+    background-color: lightslategrey;
+}
+ 
+.box button:active {
+    font-size: 1.2em;
+    color: red;
+}
+
+.box button::after {
+    content: ' 👋';
+    display: none;
+}
+
+.box button:hover::after {
+    display: inline;
+}
+
+.box a {
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s, font-weight 0.3s, text-decoration 0.3s;
+}
+
+.box a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.box a:active {
+    font-weight: bold;
+}
+
+.box a::before {
+    content: '🌐 ';
+}
